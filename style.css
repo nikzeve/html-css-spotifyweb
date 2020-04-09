@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 aside {
@@ -13,6 +14,7 @@ aside {
     width:  200px;
     background-color: grey;
     position: fixed;
+    color: whitesmoke;
 }
 
 main {
@@ -24,4 +26,43 @@ main {
 footer {
     height: 100px;
     background-color: orange;
+}
+
+#logo {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#logo img {
+    height: 40px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.sezioni {
+    margin-bottom: 5px;
+    padding: 5px 20px 5px;
+}
+
+.sezioni:nth-last-child(3) {
+    border-left: 4px solid #00ea38;
+    padding-left: 16px;
+}
+
+.sezioni i {
+    width: 20px;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.sezioni span {
+    font-size: 13px;
+}
+
+#playlist {
+    height: 150px;
+    background-color: red;
+    margin-top: 20px;
 }
