@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+}
+
+aside {
+    height: calc(100vh - 100px);
+    width:  200px;
+    background-color: grey;
+    position: fixed;
+}
+
+main {
+    height: calc(100vh - 100px);
+    width: calc(100vw - 200px);
+    margin-left: 200px;
+}
+
+footer {
+    height: 100px;
+    background-color: orange;
+}
