@@ -20,7 +20,7 @@ aside {
     opacity: 0.7;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    justify-content: flex-start;
 
 }
 
@@ -80,11 +80,20 @@ main {
 #users {
     height: 100px;
     width: 200px;
-    background-color: red;
-    align-self: flex-end;
+    padding: 20px 20px 20px;
 }
 
+#users i {
+    margin-right: 5px;
+}
 
+#install {
+    margin-bottom: 5px;
+}
+
+#username {
+    margin-top: 5px;
+}
 
 .container {
     width: 75%;
@@ -235,13 +244,31 @@ footer {
 
 
 input[type=range] {
-
   width: 90%;
-
 }
 
 #footer-right {
     float: left;
     width: 25%;
-    background-color: red;
+    padding: 35px 0;
+}
+
+#footer-right .row{
+    width: 75%;
+    margin-left: 25%;
+    padding-left: 30px;
+
+}
+
+#footer-right .icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#form {
+    display: inline-block;
+}
+
+#form input[type=range] {
+  width: 100%;
 }
