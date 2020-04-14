@@ -12,7 +12,7 @@ body {
 }
 
 aside {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     width:  200px;
     background-color: black;
     position: fixed;
@@ -30,14 +30,6 @@ main {
     margin-left: 200px;
     font-size: 20px;
     padding-bottom: 100px;
-}
-
-footer {
-    height: 100px;
-    width: 100%;
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
 }
 
 #logo {
@@ -97,6 +89,7 @@ footer {
 .container {
     width: 75%;
     margin: auto;
+    padding-top: 20px;
 }
 
 #row {
@@ -104,13 +97,20 @@ footer {
     margin-bottom: 20px;
 }
 
+#row .none  {
+    display: none;
+    color: white;
+    font-size: 30px;
+
+}
+
 #menu, #menu li {
     display: inline-block;
 }
 
 #menu li p {
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 30px;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -119,7 +119,12 @@ footer {
     position: relative;
 }
 
+#menu li:first-child {
+    border-bottom: 1px solid #00ea38;
+}
+
 #created-for-you {
+    margin-bottom: 50px;
 }
 
 .title {
@@ -158,4 +163,58 @@ footer {
 }
 .no-circle img {
     border-radius: 0;
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#footer-left {
+    padding: 15px 10px;;
+}
+#images {
+    display: inline-block;
+}
+
+#images img {
+    height: 60px;
+}
+
+#song-title {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#song-title :first-child{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#song-title :last-child{
+    font-size: 13px;
+}
+
+#heart {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+#footer-center {
+    width: 500px;
+    background-color: red
+}
+
+#footer-right {
+    width: 200px;
+    background-color: red;
 }
