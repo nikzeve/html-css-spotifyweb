@@ -18,15 +18,18 @@ aside {
     position: fixed;
     color: whitesmoke;
     opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 
 }
 
 main {
-    height: calc(100vh - 100px);
+
     width: calc(100vw - 200px);
     margin-left: 200px;
-    position: relative;
-    font-size: 40px;
+    font-size: 20px;
+    padding-bottom: 100px;
 }
 
 footer {
@@ -34,6 +37,7 @@ footer {
     width: 100%;
     background-color: #282828;
     position: fixed;
+    bottom: 0;
 }
 
 #logo {
@@ -85,12 +89,56 @@ footer {
     height: 100px;
     width: 200px;
     background-color: red;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    align-self: flex-end;
 }
 
+
+
 .container {
-    width: 70%;
+    width: 75%;
     margin: auto;
+}
+
+#row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#menu, #menu li {
+    display: inline-block;
+}
+
+#menu li p {
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 0 10px;
+    position: relative;
+}
+
+#created-for-you {
+}
+
+#created-for-you p {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.artist {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    margin-right: 20px;
+    margin-top: 20px;
+
 }
