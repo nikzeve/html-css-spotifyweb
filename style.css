@@ -101,6 +101,7 @@ main {
     padding-top: 20px;
 }
 
+
 #row {
     text-align: center;
     margin-bottom: 20px;
@@ -133,6 +134,18 @@ main {
 }
 
 #created-for-you {
+    margin-bottom: 50px;
+}
+
+#recent-song {
+    margin-bottom: 50px;
+}
+
+#example-1 {
+    margin-bottom: 50px;
+}
+
+#example-2 {
     margin-bottom: 50px;
 }
 
@@ -271,4 +284,72 @@ input[type=range] {
 
 #form input[type=range] {
   width: 100%;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+    #menu {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #row .none {
+        display: inline-block;
+        float: left;
+    }
+
+    #created-for-you {
+        margin-top: 90px;
+    }
+
+    #song-title p {
+        display: none;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    #playlist {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #row .none {
+        display: inline-block;
+        float: left;
+    }
+
+    #created-for-you {
+        margin-top: 90px;
+    }
+
+    #song-title p {
+        display: none;
+    }
+
+    #footer-right {
+        display: none;
+    }
+
+    #footer-center {
+        width: 75%;
+    }
+
+    #text {display: none;}
 }
